@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Basic Styling</title>
+    <style>
+      body{
+        background: #4d4d4d;
+        font-family: arial;
+        line-height: 1.5em;
+      }
+      #container{
+        border: 5px #ffffff solid;
+        margin: 30px auto;
+        width: 1000px;
+        overflow: hidden;
+      }
+      #container p{
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      #container h1{
+        padding-left: 10px;
+      }
+      .emp{
+        color: orange;
+        font-weight: bold;
+      }
+      .side-a{
+        float: left;
+        width: 50%;
+      }
+      .side-b{
+        float: right;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="side-a">
+        <h1>Side A</h1>
+        <p>"<strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea <span class="emp">commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu <span class="emp">fugiat nulla pariatur</span>. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum."
+        </p>
+      </div>
+      <div class="side-b">
+        <h1>Side B</h1>
+        <p>"<strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea <span class="emp">commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu <span class="emp">fugiat nulla pariatur</span>."
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

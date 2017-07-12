@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- My First HTML -->
+<html>
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>index page</title>
+  </head>
+
+
+  <body>
+    <h1>Index Page</h1>
+
+    <img src="http://lorempixel.com/400/200/" alt="random img">
+    <br>
+    <a href="https://www.google.co.uk" target="_blank" title="Google website">Google</a>
+
+    <p>"<strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+      ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum."
+    </p>
+
+    <ul>
+      <li>unordered item 1</li>
+      <li>unordered item 2</li>
+      <li>unordered item 3</li>
+      <li>unordered item 4</li>
+    </ul>
+
+    <ol>
+      <li>ordered item 1</li>
+      <li>ordered item 2</li>
+      <li>ordered item 3</li>
+      <li>ordered item 4</li>
+    </ol>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <td>First Name</td>
+          <td>Family Name</td>
+          <td>Age</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Joe</td>
+          <td>You</td>
+          <td>32</td>
+        </tr>
+        <tr>
+          <td>Emma</td>
+          <td>Watson</td>
+          <td>30</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h1>Form</h1>
+
+    <form class="" action="index.html" method="post">
+      <fieldset>
+        <legend>Account</legend>
+        <label for="">Name</label><br>
+        <input type="text" name="name" value="">
+        <br><br>
+        <label for="">Email</label><br>
+        <input type="email" name="email" value="" required>
+        <br><br>
+        <label for="">Password</label><br>
+        <input type="password" name="password" value="" required>
+        <br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>User Info</legend>
+        <select class="" name="location">
+          <option value="MA">MA</option>
+          <option value="NY" selected>NY</option>
+          <option value="CA">CA</option>
+          <option value="IL">IL</option>
+        </select>
+        <br><br>
+        <label for="">Gender</label><br>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female" checked>Female
+        <br><br>
+        <label for="">Intrests</label><br>
+        <input type="checkbox" name="movies" value="movies">Movies
+        <input type="checkbox" name="music" value="music" checked>Music
+        <input type="checkbox" name="art" value="art" checked>Art
+        <br><br>
+      </fieldset>
+
+      <input type="submit" name="submit" value="submit">
+    </form>
+
+  </body>
+
+</html>
