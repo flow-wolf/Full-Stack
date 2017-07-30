@@ -10,14 +10,14 @@
     <script>
       var x = document.getElementById('coords');
       function getLocation() {
-        if(navigation.geolocation){
+        if(navigator.geolocation){
           navigator.geolocation.getCurrentPosition(showPosition);
         }else{
           x.innerHTML = "Geolocation is not supported";
         }
 
         function showPosition(position) {
-          console.log(position.cords.latitude)
+          console.log(position.coords.latitude);
         }
 
       }
