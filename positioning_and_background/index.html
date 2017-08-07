@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>positioning and background</title>
+    <style >
+      .wrapper{
+        border: #000 1px solid;
+        width: 1000px;
+        height: 1000px;
+        position: relative;
+        left: 50px;
+        top: 100px;
+        background: #000 url('bg.png') no-repeat 100px 100px;
+      }
+      .inside{
+        border: #ff0000 1px solid;
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="inside">
+
+      </div>
+    </div>
+  </body>
+</html>
