@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>java variables</title>
+  </head>
+  <body>
+    <div id="js_replace1"></div>
+    <br>
+    <div id="js_replace2"></div>
+
+    <script type="text/javascript">
+      // This is a variabe
+      var alert_msg = "Hello World";
+      alert(alert_msg);
+
+      // This is an array
+      var car_list = ["volvo","VW","Bently"];
+      console.log(car_list);
+
+      // This is an object
+      var person = {
+        "name" : "fred",
+        "age" : "32",
+        "sex" : "male"
+      };
+      document.getElementById("js_replace1").innerHTML = person.name;
+
+      // This is an array of objects
+      var object_list = [
+        {"name":"fred"},
+        {"name":"wilma"},
+        {"name":"barney"},
+        {"name":"betty"}
+      ];
+      document.getElementById("js_replace2").innerHTML = object_list[2].name
+
+
+    </script>
+  </body>
+</html>
