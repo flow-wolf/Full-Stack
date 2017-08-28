@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>loops and conditions</title>
+  </head>
+  <body>
+    <ul id="people">
+      <!-- <li id="people"></li> -->
+    </ul>
+    <br>
+    <div id="name1"></div>
+    <br>
+    <div id="name2"></div>
+
+    <script type="text/javascript">
+      // Loops
+      var i = 0;
+      for (var i = 0; i < 10; i++) {
+        console.log(i);
+      }
+
+      var i = 0;
+      while (i < 10) {
+        console.log(i);
+        i++;
+      }
+
+      var people = [
+        {name : "maria", age : 25},
+        {name : "ben", age : 35},
+        {name : "liz", age : 15},
+        {name : "dan", age : 45},
+        {name : "steve", age : 55}
+      ];
+
+      for (var i = 0; i < people.length; i++) {
+        document.getElementById('people').innerHTML += "<li>"+people[i].name+" "+people[i].age+"</li>";
+      }
+
+      // Conditions
+      var name = "Bob";
+
+      if (name === "Bob") {
+        document.getElementById("name1").innerHTML = name;
+      } else if (name === "James") {
+        document.getElementById("name1").innerHTML = name;
+      } else {
+        var string = "name is "+name;
+        document.getElementById("name1").innerHTML = name;
+      }
+
+      switch (name) {
+        case "Joe":
+          document.getElementById("name2").innerHTML = name;
+          break;
+        case "James":
+          document.getElementById("name2").innerHTML = name;
+          break;
+        default:
+          var string = "name is "+name;
+          document.getElementById("name2").innerHTML = string;
+          break;
+      }
+
+
+    </script>
+  </body>
+</html>
