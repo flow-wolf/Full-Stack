@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>dom manipulation</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous">
+    </script>
+  </head>
+  <body>
+    <div id="d1"></div>
+    <div id="d2" class="somuch"></div>
+    <input id="i1" type="text" name="" value="">
+    <br><br>
+    <ul id="list1">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ul>
+    <ul id="list2">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ul>
+    <ul id="list3">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ul>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#d1').text("Hello World");
+        $('#d2').html("<h1>Hello World</h1>");
+        $("#i1").val("hello");
+        $("#d1").attr('class', 'fullofclass');
+        $("#d2").removeAttr('class');
+        $("#list1").prepend('<li>item prepended</li>');
+        $("#list1").append('<li>item appended</li>');
+        $("#list1").before('<p>before list</p>');
+        $("#list1").after('<p>after list</p>');
+        $("#list2").remove(); //completely removes everythng including tag
+        $("#list3").empty(); //only removes nested items within tag
+
+      });
+    </script>
+  </body>
+</html>
