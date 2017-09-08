@@ -8,6 +8,11 @@
       integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
       crossorigin="anonymous">
     </script>
+    <style media="screen">
+      .red{ color: red;}
+      .green{ color: green;}
+      .blue{ background: blue;}
+    </style>
   </head>
   <body>
     <div id="d1"></div>
@@ -32,6 +37,10 @@
       <li>item 3</li>
       <li>item 4</li>
     </ul>
+    <br><br>
+    <button id="myBtn">Click</button>
+    <div id="d3">applying class red</div>
+    <div id="d4" class="green">removing class green</div>
     <script type="text/javascript">
       $(document).ready(function(){
         $('#d1').text("Hello World");
@@ -44,8 +53,18 @@
         $("#list1").before('<p>before list</p>');
         $("#list1").after('<p>after list</p>');
         $("#list2").remove(); //completely removes everythng including tag
-        $("#list3").empty(); //only removes nested items within tag
-
+        $("#list3").empty(); //only removes nested child items within tag
+        $('#d3').addClass('red');
+        $('#d4').removeClass('green');
+        $('#myBtn').click(function(){
+          $('#d2').toggleClass('green');
+        });
+        $('#d1').css('background','pink');
+        $('#d1').width(150);
+        $('#d1').height(50);
+        $('#d2').replaceWith('<h2>REPLACED</h2>');
+        $('li').unwrap();
+        $('#d3').wrap('<div class="blue"></div>');
       });
     </script>
   </body>
